@@ -38,6 +38,7 @@ public class PDF_Activity extends AppCompatActivity {
             if(file.canRead())
             {
                 //LOAD IT
+
                 pdfView.fromFile(file).defaultPage(1).onLoad(new OnLoadCompleteListener() {
                     @Override
                     public void loadComplete(int nbPages) {
